@@ -1,0 +1,11 @@
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.GUI.frmCustomerManager.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.Form1.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.Properties.Resources.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.csproj.GenerateResource.cache
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.csproj.CoreCompileInputs.cache
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\bin\Debug\QLNhaSach.exe.config
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\bin\Debug\QLNhaSach.exe
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\bin\Debug\QLNhaSach.pdb
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.exe
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.pdb
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.csproj.AssemblyReference.cache
