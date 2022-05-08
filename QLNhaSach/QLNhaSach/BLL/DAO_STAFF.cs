@@ -11,11 +11,7 @@ namespace QLNhaSach.BLL
     class DAO_STAFF
     {
         QLNhaSachDataContext QLNS = new QLNhaSachDataContext();
-        public DataTable loadStaff()
-        {
-            var lstStaff = QLNS.TBL_NHANVIENs.Select(nv => nv);
-            return (DataTable)lstStaff;
-        }
+        public List<TBL_NHANVIEN> loadStaff() => QLNS.TBL_NHANVIENs.ToList();
 
         public void addStaff(string manv, string tennv, string gioitinh, int cmnd, string diachi, string chucvu)
         {

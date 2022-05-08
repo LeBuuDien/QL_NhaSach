@@ -36,8 +36,7 @@ namespace QLNhaSach.GUI
             this.btnDEL = new System.Windows.Forms.ToolStripButton();
             this.btnUpdate = new System.Windows.Forms.ToolStripButton();
             this.btnSave = new System.Windows.Forms.ToolStripButton();
-            this.btnCustomer = new System.Windows.Forms.Button();
-            this.btnStaff = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +70,7 @@ namespace QLNhaSach.GUI
             this.btnADD.Name = "btnADD";
             this.btnADD.Size = new System.Drawing.Size(51, 22);
             this.btnADD.Text = "ADD";
+            this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
             // 
             // btnDEL
             // 
@@ -96,36 +96,26 @@ namespace QLNhaSach.GUI
             this.btnSave.Size = new System.Drawing.Size(53, 22);
             this.btnSave.Text = "SAVE";
             // 
-            // btnCustomer
+            // comboBox1
             // 
-            this.btnCustomer.Location = new System.Drawing.Point(179, 36);
-            this.btnCustomer.Name = "btnCustomer";
-            this.btnCustomer.Size = new System.Drawing.Size(75, 23);
-            this.btnCustomer.TabIndex = 2;
-            this.btnCustomer.Text = "Customer";
-            this.btnCustomer.UseVisualStyleBackColor = true;
-            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
-            // 
-            // btnStaff
-            // 
-            this.btnStaff.Location = new System.Drawing.Point(179, 66);
-            this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(75, 23);
-            this.btnStaff.TabIndex = 3;
-            this.btnStaff.Text = "Staff";
-            this.btnStaff.UseVisualStyleBackColor = true;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(133, 95);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 4;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // frmCustomerManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 569);
-            this.Controls.Add(this.btnStaff);
-            this.Controls.Add(this.btnCustomer);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmCustomerManager";
             this.Text = "frmCustomerManager";
+            this.Load += new System.EventHandler(this.frmCustomerManager_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -142,7 +132,6 @@ namespace QLNhaSach.GUI
         private System.Windows.Forms.ToolStripButton btnDEL;
         private System.Windows.Forms.ToolStripButton btnUpdate;
         private System.Windows.Forms.ToolStripButton btnSave;
-        private System.Windows.Forms.Button btnCustomer;
-        private System.Windows.Forms.Button btnStaff;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

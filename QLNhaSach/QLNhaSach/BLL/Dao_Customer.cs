@@ -12,10 +12,9 @@ namespace QLNhaSach.BLL
     public class Dao_Customer
     {
         QLNhaSachDataContext QLNS = new QLNhaSachDataContext();
-        public DataTable loadCustomer()
+        public List<TBL_KHACHHANG> loadCustomer()
         {
-            var query = from kh in QLNS.TBL_KHACHHANGs select kh;
-            return (DataTable)query;
+            return QLNS.TBL_KHACHHANGs.ToList();
         }
 
         public void addCustomer(string makh, string tenKH, string gioiTinh, int sdt, string email, string address)

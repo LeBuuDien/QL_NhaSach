@@ -49,6 +49,18 @@
   <ItemGroup>
     <Compile Include="BLL\Dao_Customer.cs" />
     <Compile Include="BLL\DAO_STAFF.cs" />
+    <Compile Include="GUI\Adminitrator\frmAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Adminitrator\frmAddCustomer.Designer.cs">
+      <DependentUpon>frmAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Adminitrator\frmAddStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Adminitrator\frmAddStaff.Designer.cs">
+      <DependentUpon>frmAddStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +86,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\Adminitrator\frmAddCustomer.resx">
+      <DependentUpon>frmAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Adminitrator\frmAddStaff.resx">
+      <DependentUpon>frmAddStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Adminitrator\frmManager.resx">
       <DependentUpon>frmManager.cs</DependentUpon>
     </EmbeddedResource>
