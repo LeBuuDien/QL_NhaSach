@@ -51,5 +51,17 @@ namespace QLNhaSach.GUI
             else
                 dataGridView1.DataSource = customer.loadCustomer();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void kinhDoanhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDoanhThu dt = new frmDoanhThu();
+            dt.Show();
+            this.Hide();
+        }
     }
 }

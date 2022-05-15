@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using QLNhaSach.BLL;
+using System;
 using System.Windows.Forms;
-using QLNhaSach.BLL;
 
 
 namespace QLNhaSach.GUI.Adminitrator
@@ -24,7 +17,7 @@ namespace QLNhaSach.GUI.Adminitrator
         {
             try
             {
-                customer.addCustomer(txtCCode.Text,txtCName.Text,textBox3.Text,int.Parse(txtCPN.Text),txtCEmail.Text,txtCAddress.Text);
+                //customer.addCustomer(txtCCode.Text,txtCName.Text,textBox3.Text,int.Parse(txtCPN.Text),txtCEmail.Text,txtCAddress.Text);
                 MessageBox.Show("succesfull");
             }
             catch (Exception)

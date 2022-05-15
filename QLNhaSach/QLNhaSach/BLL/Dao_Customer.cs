@@ -1,33 +1,25 @@
-﻿using System;
+﻿using QLNhaSach.DTO.MODEL;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using QLNhaSach.MODEL;
-using System.Data.Linq.SqlClient;
-using System.Data;
 
 namespace QLNhaSach.BLL
 {
     public class Dao_Customer
     {
-        QLNhaSachDataContext QLNS = new QLNhaSachDataContext();
-        public List<TBL_KHACHHANG> loadCustomer()
-        {
-            return QLNS.TBL_KHACHHANGs.ToList();
-        }
+        QLNSDataContext QLNS = new QLNSDataContext();
+        public List<CUSTOMER> loadCustomer() => QLNS.CUSTOMERs.Select(c => c).ToList();
 
-        public void addCustomer(string makh, string tenKH, string gioiTinh, int sdt, string email, string address)
+        public void addCustomer(string makh, string tenKH, string un, string sdt, string email, string address)
         {
-            TBL_KHACHHANG customer = new TBL_KHACHHANG();
-            customer.MAKH = makh;
-            customer.TENKH = tenKH;
-            customer.GIOITINH = gioiTinh;
-            customer.SDT = sdt;
-            customer.EMAIL = email;
-            customer.DIACHI = address;
+            CUSTOMER customer = new CUSTOMER();
+            customer.MaKH = makh;
+            customer.TenKH = tenKH;
+            customer.sdt = sdt;
+            customer.Email = email;
+            customer.address = address;
+            customer.Username = un;
 
-            QLNS.TBL_KHACHHANGs.InsertOnSubmit(customer);
+            QLNS.CUSTOMERs.InsertOnSubmit(customer);
             QLNS.SubmitChanges();
         }
     }

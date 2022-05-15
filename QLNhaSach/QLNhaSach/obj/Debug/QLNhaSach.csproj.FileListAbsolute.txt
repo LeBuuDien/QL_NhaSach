@@ -5,8 +5,12 @@ D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.GUI.Admin
 D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.GUI.Adminitrator.frmAddStaff.resources
 D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.GUI.frmCustomerManager.resources
 D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.Form1.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.GUI.frmLogin.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.GUI.Staff.frmHoaDon.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.GUI.Staff.frmQLHH.resources
 D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.Properties.Resources.resources
 D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.csproj.GenerateResource.cache
 D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.csproj.CoreCompileInputs.cache
 D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.exe
 D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.pdb
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.GUI.Adminitrator.frmDoanhThu.resources

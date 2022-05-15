@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 12.125" name="QLNS">
+  <DataContextMoniker Name="/QLNSDataContext" />
+  <nestedChildShapes>
+    <classShape Id="67df31de-1586-4418-b9dd-c4b436642c08" absoluteBounds="3.5, 1, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/QLNSDataContext/STAFF" />
+      <nestedChildShapes>
+        <elementListCompartment Id="36a89730-d7b8-4d39-8911-92a87e5ae886" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6678443b-8344-46a4-948a-7848719f2547" absoluteBounds="6.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QLNSDataContext/DOANHTHU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3a2f2d37-6a7f-4a8b-9fb7-30e772e85479" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="43749d55-7f2e-44a2-846b-65fb91b6e453" absoluteBounds="3.5, 3.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/QLNSDataContext/CUSTOMER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89a5bf49-4f3e-4444-98b7-ac625773a63d" absoluteBounds="3.515, 4.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e5553d08-f326-4073-ae2d-bb63633729c2" absoluteBounds="3.5, 9.875, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/QLNSDataContext/BOOK" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9617de28-a210-45f3-9f0c-51fc74958790" absoluteBounds="3.515, 10.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="717388d5-b20d-4e3c-ab8f-2a241ee837df" absoluteBounds="6.25, 3.875, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/QLNSDataContext/Billinfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9a27eeb-5d42-417c-94f1-81232387d000" absoluteBounds="6.265, 4.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e63e8126-cc4d-4968-9e3c-c427381c15b4" absoluteBounds="3.5, 7.75, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/QLNSDataContext/BILL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2bbe6fd0-366d-4c00-a4d9-b432f10b3373" absoluteBounds="3.515, 8.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="31c2c41f-92ab-49b5-a60b-44cd5f49d4f1" absoluteBounds="0.75, 2.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/QLNSDataContext/ACCOUNT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e58b7f7-fa42-4540-a134-532495ffa9b7" absoluteBounds="0.765, 3.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 10.8565991210937); (7.25 : 10.8565991210937); (7.25 : 5.64589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLNSDataContext/BOOK/BOOK_Billinfo" />
+      <nodes>
+        <classShapeMoniker Id="e5553d08-f326-4073-ae2d-bb63633729c2" />
+        <classShapeMoniker Id="717388d5-b20d-4e3c-ab8f-2a241ee837df" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.76044840494792); (6.25 : 4.76044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLNSDataContext/CUSTOMER/CUSTOMER_Billinfo" />
+      <nodes>
+        <classShapeMoniker Id="43749d55-7f2e-44a2-846b-65fb91b6e453" />
+        <classShapeMoniker Id="717388d5-b20d-4e3c-ab8f-2a241ee837df" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.44314697265625); (6.7187475 : 8.44314697265625); (6.7187475 : 5.64589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLNSDataContext/BILL/BILL_Billinfo" />
+      <nodes>
+        <classShapeMoniker Id="e63e8126-cc4d-4968-9e3c-c427381c15b4" />
+        <classShapeMoniker Id="717388d5-b20d-4e3c-ab8f-2a241ee837df" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 2.75); (1.75 : 1.8749995); (3.5 : 1.8749995)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLNSDataContext/ACCOUNT/ACCOUNT_STAFF" />
+      <nodes>
+        <classShapeMoniker Id="31c2c41f-92ab-49b5-a60b-44cd5f49d4f1" />
+        <classShapeMoniker Id="67df31de-1586-4418-b9dd-c4b436642c08" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.94314697265625); (3.5 : 3.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLNSDataContext/ACCOUNT/ACCOUNT_CUSTOMER" />
+      <nodes>
+        <classShapeMoniker Id="31c2c41f-92ab-49b5-a60b-44cd5f49d4f1" />
+        <classShapeMoniker Id="43749d55-7f2e-44a2-846b-65fb91b6e453" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

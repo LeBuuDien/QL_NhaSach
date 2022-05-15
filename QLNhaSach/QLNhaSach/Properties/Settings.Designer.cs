@@ -26,10 +26,21 @@ namespace QLNhaSach.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-7JOC3DO;Initial Catalog=QLNhaSach;User ID=sa")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-7JOC3DO;Initial Catalog=QLNhaSach;User id=sa;Password=1;Integ" +
+            "rated Security=True;MultipleActiveResultSets=True")]
         public string QLNhaSachConnectionString {
             get {
                 return ((string)(this["QLNhaSachConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-7JOC3DO;Initial Catalog=Bookshop;User ID=sa")]
+        public string BookshopConnectionString {
+            get {
+                return ((string)(this["BookshopConnectionString"]));
             }
         }
     }

@@ -1,29 +1,26 @@
-﻿using System;
+﻿using QLNhaSach.DTO.MODEL;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
-using QLNhaSach.MODEL;
 
 namespace QLNhaSach.BLL
 {
     class DAO_STAFF
     {
-        QLNhaSachDataContext QLNS = new QLNhaSachDataContext();
-        public List<TBL_NHANVIEN> loadStaff() => QLNS.TBL_NHANVIENs.ToList();
+        QLNSDataContext QLNS = new QLNSDataContext();
+        public List<STAFF> loadStaff() => QLNS.STAFFs.ToList();
 
-        public void addStaff(string manv, string tennv, string gioitinh, int cmnd, string diachi, string chucvu)
+        public void addStaff(string manv, string tennv, string email, string diachi, string sdt, string username)
         {
-            TBL_NHANVIEN staff = new TBL_NHANVIEN();
-            staff.MANV = manv;
-            staff.TENNV = tennv;
-            staff.GIOTINH = gioitinh;
-            staff.CMND = cmnd;
-            staff.DIACHI = diachi;
-            staff.CHUCVU = chucvu;
+            STAFF staff = new STAFF();
+            staff.MaNV = manv;
+            staff.TenNV = tennv;
+            staff.SDT = sdt;
+            staff.Email = email;
+            staff.address = diachi;
+            staff.Username = username;
 
-            QLNS.TBL_NHANVIENs.InsertOnSubmit(staff);
+
+            QLNS.STAFFs.InsertOnSubmit(staff);
             QLNS.SubmitChanges();
         }
     }

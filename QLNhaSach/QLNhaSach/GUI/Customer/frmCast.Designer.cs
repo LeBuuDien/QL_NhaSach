@@ -1,7 +1,7 @@
 ﻿
-namespace QLNhaSach.GUI
+namespace QLNhaSach.GUI.Customer
 {
-    partial class frmLogin
+    partial class frmCast
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace QLNhaSach.GUI
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmLogin";
+            this.Text = "frmCast";
         }
 
         #endregion

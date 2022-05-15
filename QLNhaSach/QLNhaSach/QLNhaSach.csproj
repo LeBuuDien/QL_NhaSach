@@ -48,18 +48,43 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\Dao_Customer.cs" />
+    <Compile Include="BLL\Dao_QLSP.cs" />
     <Compile Include="BLL\DAO_STAFF.cs" />
-    <Compile Include="GUI\Adminitrator\frmAddCustomer.cs">
+    <Compile Include="GUI\add\frmAddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Adminitrator\frmAddCustomer.Designer.cs">
+    <Compile Include="GUI\add\frmAddCustomer.Designer.cs">
       <DependentUpon>frmAddCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Adminitrator\frmAddStaff.cs">
+    <Compile Include="GUI\add\frmAddStaff.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Adminitrator\frmAddStaff.Designer.cs">
+    <Compile Include="GUI\add\frmAddStaff.Designer.cs">
       <DependentUpon>frmAddStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Adminitrator\frmDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Adminitrator\frmDoanhThu.Designer.cs">
+      <DependentUpon>frmDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Customer\frmCast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Customer\frmCast.Designer.cs">
+      <DependentUpon>frmCast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Customer\frmThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Customer\frmThongTinCaNhan.Designer.cs">
+      <DependentUpon>frmThongTinCaNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Customer\frmTraCuuSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Customer\frmTraCuuSach.Designer.cs">
+      <DependentUpon>frmTraCuuSach.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
@@ -73,30 +98,66 @@
     <Compile Include="GUI\Adminitrator\frmManager.Designer.cs">
       <DependentUpon>frmManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmLogin.cs">
+    <Compile Include="GUI\login\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmLogin.Designer.cs">
+    <Compile Include="GUI\login\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="MODEL\QLNhaSach.designer.cs">
+    <Compile Include="GUI\Staff\frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Staff\frmHoaDon.Designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Staff\frmQLHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Staff\frmQLHH.Designer.cs">
+      <DependentUpon>frmQLHH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Staff\frmThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Staff\frmThanhToan.Designer.cs">
+      <DependentUpon>frmThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Staff\frmTraCuu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Staff\frmTraCuu.Designer.cs">
+      <DependentUpon>frmTraCuu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\MODEL\QLNS.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>QLNhaSach.dbml</DependentUpon>
+      <DependentUpon>QLNS.dbml</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\Adminitrator\frmAddCustomer.resx">
+    <EmbeddedResource Include="GUI\add\frmAddCustomer.resx">
       <DependentUpon>frmAddCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Adminitrator\frmAddStaff.resx">
+    <EmbeddedResource Include="GUI\add\frmAddStaff.resx">
       <DependentUpon>frmAddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Adminitrator\frmDoanhThu.resx">
+      <DependentUpon>frmDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Adminitrator\frmManager.resx">
       <DependentUpon>frmManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Staff\frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Staff\frmQLHH.resx">
+      <DependentUpon>frmQLHH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,13 +168,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="MODEL\QLNhaSach.dbml">
+    <None Include="DTO\MODEL\QLNS.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>QLNhaSach.designer.cs</LastGenOutput>
+      <LastGenOutput>QLNS.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="MODEL\QLNhaSach.dbml.layout">
-      <DependentUpon>QLNhaSach.dbml</DependentUpon>
+    <None Include="DTO\MODEL\QLNS.dbml.layout">
+      <DependentUpon>QLNS.dbml</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -131,8 +192,9 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="GUI\Customer\" />
+    <Content Include="DTO\image\360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

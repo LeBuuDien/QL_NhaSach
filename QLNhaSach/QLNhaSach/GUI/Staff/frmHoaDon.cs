@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QLNhaSach.GUI
+namespace QLNhaSach.GUI.Staff
 {
-    public partial class frmLogin : Form
+    public partial class frmHoaDon : Form
     {
-        public frmLogin()
+        public frmHoaDon()
         {
             InitializeComponent();
         }
