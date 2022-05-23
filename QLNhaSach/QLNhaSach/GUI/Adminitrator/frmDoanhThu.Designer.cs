@@ -183,6 +183,7 @@ namespace QLNhaSach.GUI.Adminitrator
             this.Controls.Add(this.label1);
             this.Name = "frmDoanhThu";
             this.Text = "frmDoanhThu";
+            this.Load += new System.EventHandler(this.frmDoanhThu_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

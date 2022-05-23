@@ -47,9 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\DAO_Bill.cs" />
+    <Compile Include="BLL\DAO_CTHD.cs" />
     <Compile Include="BLL\Dao_Customer.cs" />
     <Compile Include="BLL\Dao_QLSP.cs" />
     <Compile Include="BLL\DAO_STAFF.cs" />
+    <Compile Include="BLL\Dao_TacGia.cs" />
+    <Compile Include="BLL\Dao_TheLoai.cs" />
+    <Compile Include="BLL\login.cs" />
     <Compile Include="GUI\add\frmAddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +152,12 @@
     <EmbeddedResource Include="GUI\Adminitrator\frmManager.resx">
       <DependentUpon>frmManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Customer\frmCast.resx">
+      <DependentUpon>frmCast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Customer\frmTraCuuSach.resx">
+      <DependentUpon>frmTraCuuSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +169,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Staff\frmQLHH.resx">
       <DependentUpon>frmQLHH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Staff\frmThanhToan.resx">
+      <DependentUpon>frmThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Staff\frmTraCuu.resx">
+      <DependentUpon>frmTraCuu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

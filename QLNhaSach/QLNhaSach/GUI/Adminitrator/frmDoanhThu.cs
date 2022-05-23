@@ -16,5 +16,10 @@ namespace QLNhaSach.GUI.Adminitrator
         {
             InitializeComponent();
         }
+
+        private void frmDoanhThu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

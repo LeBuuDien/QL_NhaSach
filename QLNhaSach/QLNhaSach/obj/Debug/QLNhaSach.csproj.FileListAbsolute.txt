@@ -14,3 +14,7 @@ D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.csproj.Co
 D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.exe
 D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.pdb
 D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.GUI.Adminitrator.frmDoanhThu.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.csproj.AssemblyReference.cache
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.GUI.Customer.frmCast.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.GUI.Customer.frmTraCuuSach.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.GUI.Staff.frmThanhToan.resources
