@@ -7,7 +7,7 @@ namespace QLNhaSach.GUI.Adminitrator
 {
     public partial class frmAddCustomer : Form
     {
-        Dao_Customer customer = new Dao_Customer();
+        Dao_KhachHang customer = new Dao_KhachHang();
         public frmAddCustomer()
         {
             InitializeComponent();

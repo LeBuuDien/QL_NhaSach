@@ -10,7 +10,7 @@ namespace QLNhaSach.BLL
     class DAO_Bill
     {
         QLNSDataContext QLNS = new QLNSDataContext();
-        public List<BILL> loadCustomer() => QLNS.BILLs.Select(c => c).ToList();
+        public List<HOADON> loadCustomer() => QLNS.HOADONs.Select(c => c).ToList();
 
         //public void addCustomer(string makh, string tenKH, string un, string sdt, string email, string address)
         //{
@@ -60,4 +60,3 @@ namespace QLNhaSach.BLL
         //    }
         }
     }
-}

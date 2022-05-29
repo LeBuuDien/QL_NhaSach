@@ -4,36 +4,35 @@ using System.Linq;
 
 namespace QLNhaSach.BLL
 {
-    public class Dao_Customer
+    public class Dao_KhachHang
     {
         QLNSDataContext QLNS = new QLNSDataContext();
-        public List<CUSTOMER> loadCustomer() => QLNS.CUSTOMERs.Select(c => c).ToList();
+        public List<KhachHang> loadKhachHang() => QLNS.KhachHangs.Select(c => c).ToList();
 
-        public void addCustomer(string makh, string tenKH, string un, string sdt, string email, string address)
+        public void addKhachHang(string makh, string tenKH, string sdt, string email, string address)
         {
-            CUSTOMER customer = new CUSTOMER();
-            customer.MaKH = makh;
-            customer.TenKH = tenKH;
-            customer.sdt = sdt;
-            customer.Email = email;
-            customer.address = address;
-            customer.Username = un;
+            KhachHang KhachHang = new KhachHang();
+            KhachHang.MaKH = makh;
+            KhachHang.TenKH = tenKH;
+            KhachHang.SDT = sdt;
+            KhachHang.EMAIL = email;
+            KhachHang.Address = address;
 
-            QLNS.CUSTOMERs.InsertOnSubmit(customer);
+            QLNS.KhachHangs.InsertOnSubmit(KhachHang);
             QLNS.SubmitChanges();
         }
         public bool updateC(string maKH, string tenKH, string email, string address, string sdt, string un)
         {
             try
             {
-                CUSTOMER customer = QLNS.CUSTOMERs.Where(c => c.MaKH == maKH).FirstOrDefault();
-                customer.TenKH = tenKH;
-                customer.sdt = sdt;
-                customer.Email = email;
-                customer.address = address;
-                customer.Username = un;
+                KhachHang KhachHang = QLNS.KhachHangs.Where(c => c.MaKH == maKH).FirstOrDefault();
+                KhachHang.TenKH = tenKH;
+                KhachHang.SDT = sdt;
+                KhachHang.EMAIL = email;
+                KhachHang.Address = address;
+                
 
-                QLNS.CUSTOMERs.InsertOnSubmit(customer);
+                QLNS.KhachHangs.InsertOnSubmit(KhachHang);
                 QLNS.SubmitChanges();
                 return true;
             }
@@ -46,8 +45,8 @@ namespace QLNhaSach.BLL
         {
             try
             {
-                CUSTOMER customer = QLNS.CUSTOMERs.Where(c => c.MaKH == maKH).FirstOrDefault();
-                QLNS.CUSTOMERs.DeleteOnSubmit(customer);
+                KhachHang KhachHang = QLNS.KhachHangs.Where(c => c.MaKH == maKH).FirstOrDefault();
+                QLNS.KhachHangs.DeleteOnSubmit(KhachHang);
                 QLNS.SubmitChanges();
                 return true;
             }

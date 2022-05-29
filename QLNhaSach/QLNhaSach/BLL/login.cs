@@ -13,7 +13,7 @@ namespace QLNhaSach.BLL
 
         public bool funtionLogin(string username, string password)
         {
-            var q = (from p in QLNS.ACCOUNTs where p.Username == username && p.Password == password select p);
+            var q = (from p in QLNS.ACCOUNTs where p.USERNAME == username && p.PASSWORD == password select p);
             if (q.Any())
             {
                 return true;
@@ -25,7 +25,7 @@ namespace QLNhaSach.BLL
         }
         public string phanQuyen(string username)
         {
-            string a = (from p in QLNS.ACCOUNTs where p.Username == username select p.maPQ).First().ToString();
+            string a = (from p in QLNS.ACCOUNTs where p.USERNAME == username select p.MaPQ).First().ToString();
             return a;
         }
     }

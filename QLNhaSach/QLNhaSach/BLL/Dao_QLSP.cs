@@ -12,7 +12,7 @@ namespace QLNhaSach.BLL
 
         //public List<> loadNXB() => QLNS.TBL_NHAXUATBANs.Select(nxb => nxb).ToList();
 
-        public List<BOOK> loadSach() => QLNS.BOOKs.Select(b => b).ToList();
+        public List<Sach> loadSach() => QLNS.Saches.Select(b => b).ToList();
 
         //public List<TBL_TACGIA> loadTacGia() => QLNS.TBL_TACGIAs.Select(tg => tg).ToList();
 

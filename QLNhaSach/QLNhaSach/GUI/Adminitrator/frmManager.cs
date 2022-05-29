@@ -14,8 +14,8 @@ namespace QLNhaSach.GUI
 {
     public partial class frmCustomerManager : Form
     {
-        Dao_Customer customer = new Dao_Customer();
-        DAO_STAFF staff = new DAO_STAFF();
+        Dao_KhachHang customer = new Dao_KhachHang();
+        DAO_NhanVien staff = new DAO_NhanVien();
 
         public frmCustomerManager()
         {
@@ -46,10 +46,10 @@ namespace QLNhaSach.GUI
         {
             if (comboBox1.Text.Contains("Staff"))
             {
-                dataGridView1.DataSource = staff.loadStaff();
+                dataGridView1.DataSource = staff.loadNhanVien();
             }
             else
-                dataGridView1.DataSource = customer.loadCustomer();
+                dataGridView1.DataSource = customer.loadKhachHang();
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)

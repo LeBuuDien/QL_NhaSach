@@ -6,7 +6,7 @@ namespace QLNhaSach.GUI.Adminitrator
 {
     public partial class frmAddStaff : Form
     {
-        DAO_STAFF STAFF = new DAO_STAFF();
+        DAO_NhanVien STAFF = new DAO_NhanVien();
         public frmAddStaff()
         {
             InitializeComponent();

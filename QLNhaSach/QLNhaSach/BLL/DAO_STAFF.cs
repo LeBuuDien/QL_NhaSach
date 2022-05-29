@@ -4,37 +4,37 @@ using System.Linq;
 
 namespace QLNhaSach.BLL
 {
-    class DAO_STAFF
+    class DAO_NhanVien
     {
         QLNSDataContext QLNS = new QLNSDataContext();
-        public List<STAFF> loadStaff() => QLNS.STAFFs.ToList();
+        public List<NHANVIEN> loadNhanVien() => QLNS.NHANVIENs.ToList();
 
-        public void addStaff(string manv, string tennv, string email, string diachi, string sdt, string username)
+        public void addNhanVien(string manv, string tennv, string email, string diachi, string sdt, string username)
         {
-            STAFF staff = new STAFF();
-            staff.MaNV = manv;
-            staff.TenNV = tennv;
-            staff.SDT = sdt;
-            staff.Email = email;
-            staff.address = diachi;
-            staff.Username = username;
+            NHANVIEN NhanVien = new NHANVIEN();
+            NhanVien.MaNV = manv;
+            NhanVien.TenNV = tennv;
+            NhanVien.SDT = sdt;
+            NhanVien.Email = email;
+            NhanVien.address = diachi;
+           
 
 
-            QLNS.STAFFs.InsertOnSubmit(staff);
+            QLNS.NHANVIENs.InsertOnSubmit(NhanVien);
             QLNS.SubmitChanges();
         }
-        public bool updateStaff(string manv, string tennv, string email, string diachi, string sdt, string username)
+        public bool updateNhanVien(string manv, string tennv, string email, string diachi, string sdt)
         {
             try
             {
-                STAFF staff = QLNS.STAFFs.Where(t => t.MaNV == manv).FirstOrDefault();
-                staff.TenNV = tennv;
-                staff.SDT = sdt;
-                staff.Email = email;
-                staff.address = diachi;
-                staff.Username = username;
+                NHANVIEN NhanVien = QLNS.NHANVIENs.Where(t => t.MaNV == manv).FirstOrDefault();
+                NhanVien.TenNV = tennv;
+                NhanVien.SDT = sdt;
+                NhanVien.Email = email;
+                NhanVien.address = diachi;
+                
 
-                QLNS.STAFFs.InsertOnSubmit(staff);
+                QLNS.NHANVIENs.InsertOnSubmit(NhanVien);
                 QLNS.SubmitChanges();
                 return true;
             }
@@ -43,12 +43,12 @@ namespace QLNhaSach.BLL
                 return false;
             }
         }
-        public bool delStaff(string manv)
+        public bool delNhanVien(string manv)
         {
             try
             {
-                STAFF staff = QLNS.STAFFs.Where(t => t.MaNV == manv).FirstOrDefault();
-                QLNS.STAFFs.DeleteOnSubmit(staff);
+                NHANVIEN NhanVien = QLNS.NHANVIENs.Where(t => t.MaNV == manv).FirstOrDefault();
+                QLNS.NHANVIENs.DeleteOnSubmit(NhanVien);
                 QLNS.SubmitChanges();
                 return true;
             }

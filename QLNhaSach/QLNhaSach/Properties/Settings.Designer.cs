@@ -48,10 +48,31 @@ namespace QLNhaSach.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-7JOC3DO;Initial Catalog=Bookshop;User ID=sa")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-7JOC3DO;Initial Catalog=Bookshop;User ID=sa;Password=1;Integr" +
+            "ated Security=True;MultipleActiveResultSets=True")]
         public string BookshopConnectionString1 {
             get {
                 return ((string)(this["BookshopConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-7JOC3DO;Initial Catalog=Bookshop;User ID=sa")]
+        public string BookshopConnectionString2 {
+            get {
+                return ((string)(this["BookshopConnectionString2"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-7JOC3DO;Initial Catalog=BookShop;User ID=sa")]
+        public string BookShopConnectionString3 {
+            get {
+                return ((string)(this["BookShopConnectionString3"]));
             }
         }
     }
