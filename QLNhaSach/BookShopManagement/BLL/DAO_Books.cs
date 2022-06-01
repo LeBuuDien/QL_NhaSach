@@ -22,7 +22,7 @@ namespace BookShopManagement.BLL
 
                 return false;
             }
-          
+
         }
 
         public bool updateSach(Sach sach)
@@ -58,6 +58,21 @@ namespace BookShopManagement.BLL
         {
             string r = (from x in QLNS.Saches where x.MaSach == maSP select x.gia).First().ToString();
             return r;
+        }
+        public bool check(string maSACH)
+        {
+
+            var x = from Z in QLNS.Saches where Z.MaSach == maSACH select Z;
+            if (x.Any())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+
         }
     }
 }

@@ -30,7 +30,7 @@ namespace BookShopManagement.UserControls
 
         private void button2_Click(object sender, EventArgs e)
         {
-            using (Form_AddStock ads = new Form_AddStock())
+            using (Form_AddAuthor ads = new Form_AddAuthor())
             {
                 ads.ShowDialog();
             }
@@ -39,6 +39,14 @@ namespace BookShopManagement.UserControls
         private void UC_PurchaseDetails_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = books.loadSach();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (Form_AddCategory ads = new Form_AddCategory())
+            {
+                ads.ShowDialog();
+            }
         }
     }
 }

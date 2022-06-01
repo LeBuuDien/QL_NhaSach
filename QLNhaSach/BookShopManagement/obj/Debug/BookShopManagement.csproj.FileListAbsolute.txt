@@ -89,3 +89,27 @@ D:\For learning\BookShop-master\backup\BookShopManagement\BookShopManagement\bin
 D:\For learning\BookShop-master\backup\BookShopManagement\BookShopManagement\bin\Debug\BookShopManagement.pdb
 D:\For learning\BookShop-master\backup\BookShopManagement\BookShopManagement\obj\Debug\BookShopManagement.csproj.CopyComplete
 D:\For learning\BookShop-master\backup\BookShopManagement\BookShopManagement\obj\Debug\BookShopManagement.UserControls.UC_khtt.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\bin\Debug\BookShopManagement.exe.config
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\bin\Debug\BookShopManagement.exe
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\bin\Debug\BookShopManagement.pdb
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.csproj.AssemblyReference.cache
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.csproj.SuggestedBindingRedirects.cache
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.Form1.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.Forms.Form_AddCategory.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.Forms.Form_AddExpense.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.Forms.Form_AddNewBook.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.Forms.Form_Dashboard.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.Forms.Form_FinishOrder.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.Properties.Resources.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.UserControls.UC_Home.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.UserControls.UC_khtt.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.UserControls.UC_ManageUser.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.UserControls.UC_PurchaseDetails.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.UserControls.UC_Sales.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.UserControls.UC_ViewSales.resources
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.csproj.GenerateResource.cache
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.csproj.CoreCompileInputs.cache
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.csproj.CopyComplete
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.exe
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.pdb
+D:\GITHUB\QLNhaSach\QL_NhaSach\QLNhaSach\BookShopManagement\obj\Debug\BookShopManagement.Forms.Form_AddAuthor.resources

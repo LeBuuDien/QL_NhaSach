@@ -97,11 +97,11 @@
     <Compile Include="Forms\Form_AddNewBook.Designer.cs">
       <DependentUpon>Form_AddNewBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form_AddStock.cs">
+    <Compile Include="Forms\Form_AddAuthor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form_AddStock.Designer.cs">
-      <DependentUpon>Form_AddStock.cs</DependentUpon>
+    <Compile Include="Forms\Form_AddAuthor.Designer.cs">
+      <DependentUpon>Form_AddAuthor.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Form_Dashboard.cs">
       <SubType>Form</SubType>
@@ -165,8 +165,8 @@
     <EmbeddedResource Include="Forms\Form_AddNewBook.resx">
       <DependentUpon>Form_AddNewBook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form_AddStock.resx">
-      <DependentUpon>Form_AddStock.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Form_AddAuthor.resx">
+      <DependentUpon>Form_AddAuthor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_Dashboard.resx">
       <DependentUpon>Form_Dashboard.cs</DependentUpon>

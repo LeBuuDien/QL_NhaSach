@@ -33,13 +33,13 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.txtMaTL = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dragControl1 = new DragControlDemo.DragControl();
+            this.txtTenTheLoai = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // panel1
@@ -85,15 +85,15 @@
             this.textBox2.Size = new System.Drawing.Size(207, 27);
             this.textBox2.TabIndex = 17;
             // 
-            // label6
+            // txtMaTL
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(28, 99);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 19);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Category Name:";
+            this.txtMaTL.AutoSize = true;
+            this.txtMaTL.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaTL.Location = new System.Drawing.Point(64, 103);
+            this.txtMaTL.Name = "txtMaTL";
+            this.txtMaTL.Size = new System.Drawing.Size(102, 19);
+            this.txtMaTL.TabIndex = 15;
+            this.txtMaTL.Text = "Mã Thể Loại:";
             // 
             // label4
             // 
@@ -106,23 +106,15 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Add Category";
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(172, 139);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(207, 96);
-            this.richTextBox1.TabIndex = 18;
-            this.richTextBox1.Text = "";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(68, 143);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 19);
+            this.label1.Size = new System.Drawing.Size(100, 19);
             this.label1.TabIndex = 15;
-            this.label1.Text = "Description:";
+            this.label1.Text = "Tên Thể Loại";
             // 
             // button1
             // 
@@ -138,6 +130,7 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -159,17 +152,24 @@
             // 
             this.dragControl1.SelectControl = this;
             // 
+            // txtTenTheLoai
+            // 
+            this.txtTenTheLoai.Location = new System.Drawing.Point(172, 143);
+            this.txtTenTheLoai.Name = "txtTenTheLoai";
+            this.txtTenTheLoai.Size = new System.Drawing.Size(207, 27);
+            this.txtTenTheLoai.TabIndex = 23;
+            // 
             // Form_AddCategory
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(439, 313);
+            this.Controls.Add(this.txtTenTheLoai);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtMaTL);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
@@ -193,12 +193,12 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label txtMaTL;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private DragControlDemo.DragControl dragControl1;
+        private System.Windows.Forms.TextBox txtTenTheLoai;
     }
 }
