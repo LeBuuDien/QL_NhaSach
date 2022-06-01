@@ -35,16 +35,12 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTongTien = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtThu = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbTraLai = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dragControl1 = new DragControlDemo.DragControl();
             this.button4 = new System.Windows.Forms.Button();
@@ -108,41 +104,6 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(84, 122);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 19);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Net Amount:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(195, 117);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(261, 27);
-            this.textBox1.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(110, 163);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 19);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Discount:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(195, 158);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(261, 27);
-            this.textBox2.TabIndex = 4;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -153,13 +114,13 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Total Amount:";
             // 
-            // textBox3
+            // txtTongTien
             // 
-            this.textBox3.Location = new System.Drawing.Point(195, 200);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(261, 27);
-            this.textBox3.TabIndex = 4;
+            this.txtTongTien.Location = new System.Drawing.Point(195, 200);
+            this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.ReadOnly = true;
+            this.txtTongTien.Size = new System.Drawing.Size(261, 27);
+            this.txtTongTien.TabIndex = 4;
             // 
             // label5
             // 
@@ -171,12 +132,12 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Paid Amount:";
             // 
-            // textBox4
+            // txtThu
             // 
-            this.textBox4.Location = new System.Drawing.Point(195, 242);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(261, 27);
-            this.textBox4.TabIndex = 4;
+            this.txtThu.Location = new System.Drawing.Point(195, 242);
+            this.txtThu.Name = "txtThu";
+            this.txtThu.Size = new System.Drawing.Size(261, 27);
+            this.txtThu.TabIndex = 4;
             // 
             // label6
             // 
@@ -188,15 +149,15 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Change Amount:";
             // 
-            // label7
+            // lbTraLai
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(226, 304);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 19);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "00";
+            this.lbTraLai.AutoSize = true;
+            this.lbTraLai.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTraLai.Location = new System.Drawing.Point(226, 304);
+            this.lbTraLai.Name = "lbTraLai";
+            this.lbTraLai.Size = new System.Drawing.Size(27, 19);
+            this.lbTraLai.TabIndex = 1;
+            this.lbTraLai.Text = "00";
             // 
             // button1
             // 
@@ -240,17 +201,13 @@
             this.ClientSize = new System.Drawing.Size(533, 355);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtThu);
+            this.Controls.Add(this.txtTongTien);
+            this.Controls.Add(this.lbTraLai);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
@@ -262,6 +219,7 @@
             this.Name = "Form_FinishOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_FinishOrder";
+            this.Load += new System.EventHandler(this.Form_FinishOrder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -276,16 +234,12 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTongTien;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtThu;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbTraLai;
         private System.Windows.Forms.Button button1;
         private DragControlDemo.DragControl dragControl1;
         private System.Windows.Forms.Button button4;

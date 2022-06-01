@@ -24,6 +24,15 @@ namespace BookShopManagement.UserControls
         private void UC_ViewSales_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bill.LoadHoaDon();
+            lbDoanhThu.Text = TinhTien();
+        }
+        public string TinhTien()
+        {
+            int sc = dataGridView1.Rows.Count;
+            float thanhtien = 0;
+            for (int i = 0; i < sc - 1; i++)
+                thanhtien += float.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString());
+            return thanhtien.ToString();
         }
     }
 }

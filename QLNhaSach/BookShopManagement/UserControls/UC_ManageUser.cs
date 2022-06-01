@@ -49,5 +49,38 @@ namespace BookShopManagement.UserControls
             cbbRole.DisplayMember = "ChucVu";
             cbbRole.ValueMember = "MaPQ";
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            txtMaNV.Text = txtTenNV.Text = txtPhone.Text = txtEmail.Text = txtDC.Text = txtPassword.Text = txtUsername.Text = String.Empty;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            nhanVien.delNhanVien(txtMaNV.Text);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtMaNV.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            txtTenNV.Text=dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            txtPhone.Text=dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtEmail.Text=dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            txtDC.Text=dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            txtUsername.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            NHANVIEN a = new NHANVIEN();
+            a.MaNV = txtMaNV.Text;
+            a.SDT = txtPhone.Text;
+            a.TenNV = txtTenNV.Text;
+            a.Email = txtEmail.Text;
+            a.address = txtDC.Text;
+            a.username = txtUsername.Text;
+
+            nhanVien.updateNhanVien(a);
+        }
     }
 }

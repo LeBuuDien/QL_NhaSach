@@ -48,10 +48,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.labelTime = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbUSER = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timerTime = new System.Windows.Forms.Timer(this.components);
@@ -95,13 +93,12 @@
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSettings.Location = new System.Drawing.Point(12, 530);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(203, 60);
             this.btnSettings.TabIndex = 2;
-            this.btnSettings.Text = "     Settings";
+            this.btnSettings.Text = "CHATBOT";
             this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.button7_Click);
@@ -152,7 +149,7 @@
             this.btnExpense.Name = "btnExpense";
             this.btnExpense.Size = new System.Drawing.Size(203, 60);
             this.btnExpense.TabIndex = 2;
-            this.btnExpense.Text = "     Expenses";
+            this.btnExpense.Text = "     Customer";
             this.btnExpense.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExpense.UseVisualStyleBackColor = true;
             this.btnExpense.Click += new System.EventHandler(this.button4_Click);
@@ -311,38 +308,14 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.labelTime);
-            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.lbUSER);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(215, 48);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(985, 92);
             this.panel2.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(166, 50);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 19);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Admin";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(110, 50);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 19);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Role:";
             // 
             // labelTime
             // 
@@ -356,16 +329,16 @@
             this.labelTime.TabIndex = 0;
             this.labelTime.Text = "HH:MM:SS";
             // 
-            // label5
+            // lbUSER
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(165, 19);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 19);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "SaLaaR HuSyN";
+            this.lbUSER.AutoSize = true;
+            this.lbUSER.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUSER.ForeColor = System.Drawing.Color.White;
+            this.lbUSER.Location = new System.Drawing.Point(165, 19);
+            this.lbUSER.Name = "lbUSER";
+            this.lbUSER.Size = new System.Drawing.Size(120, 19);
+            this.lbUSER.TabIndex = 0;
+            this.lbUSER.Text = "SaLaaR HuSyN";
             // 
             // label1
             // 
@@ -442,9 +415,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbUSER;
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timerTime;

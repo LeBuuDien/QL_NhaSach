@@ -25,6 +25,17 @@ namespace BookShopManagement.Forms
             UC_Home uch = new UC_Home();
             AddControlsToPanel(uch);
         }
+        public Form_Dashboard(string a)
+        {
+            InitializeComponent();
+            timerTime.Start();
+            PanelWidth = panelLeft.Width;
+            isCollapsed = false;
+            UC_Home uch = new UC_Home();
+            AddControlsToPanel(uch);
+            lbUSER.Text = a;
+            btnUsers.Enabled = btnViewSales.Enabled = false; 
+        }
 
         private void button9_Click(object sender, EventArgs e)
         {

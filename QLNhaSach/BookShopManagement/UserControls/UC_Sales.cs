@@ -28,10 +28,7 @@ namespace BookShopManagement.UserControls
 
         private void button7_Click(object sender, EventArgs e)
         {
-            using (Form_FinishOrder uf = new Form_FinishOrder())
-            {
-                uf.ShowDialog();
-            }
+
         }
 
         private void UC_Sales_Load(object sender, EventArgs e)
@@ -114,7 +111,7 @@ namespace BookShopManagement.UserControls
 
             if (bill.addBillInformation(cthd))
             {
-                dataGridView1.DataSource = bill.LoadCTHD(lbMaHD.Text);
+                dataGridView1.DataSource = bill.LoadCTHD(txtMaHD.Text);
                 MessageBox.Show("SUCCESFULL");
                 tongTien+= double.Parse(txtThanhTien.Text);
                 lbTongTien.Text = tongTien.ToString();
@@ -142,6 +139,18 @@ namespace BookShopManagement.UserControls
                 f.ShowDialog();
             }
                 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button7_Click_2(object sender, EventArgs e)
+        {
+            using(Form_FinishOrder f = new Form_FinishOrder(lbTongTien.Text,txtMaHD.Text)) {
+                f.ShowDialog();
+            }
         }
     }
 }

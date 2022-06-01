@@ -47,6 +47,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.cbbKH = new System.Windows.Forms.ComboBox();
             this.cbbNV = new System.Windows.Forms.ComboBox();
+            this.button9 = new System.Windows.Forms.Button();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -63,7 +64,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel5.SuspendLayout();
@@ -274,18 +274,35 @@
             this.cbbNV.Size = new System.Drawing.Size(189, 29);
             this.cbbNV.TabIndex = 49;
             // 
+            // button9
+            // 
+            this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(343, 90);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(87, 27);
+            this.button9.TabIndex = 51;
+            this.button9.Text = "NEW";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // panelLeft
             // 
+            this.panelLeft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelLeft.BackColor = System.Drawing.Color.LightGray;
             this.panelLeft.Controls.Add(this.dataGridView1);
             this.panelLeft.Controls.Add(this.panel5);
             this.panelLeft.Controls.Add(this.panel4);
             this.panelLeft.Controls.Add(this.panel3);
-            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelLeft.Location = new System.Drawing.Point(726, 0);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(259, 580);
-            this.panelLeft.TabIndex = 50;
+            this.panelLeft.TabIndex = 52;
             // 
             // dataGridView1
             // 
@@ -333,7 +350,7 @@
             this.button7.TabIndex = 2;
             this.button7.Text = "Finish";
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click_1);
+            this.button7.Click += new System.EventHandler(this.button7_Click_2);
             // 
             // button6
             // 
@@ -464,28 +481,12 @@
             this.panel3.Size = new System.Drawing.Size(10, 580);
             this.panel3.TabIndex = 4;
             // 
-            // button9
-            // 
-            this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(343, 90);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(87, 27);
-            this.button9.TabIndex = 51;
-            this.button9.Text = "NEW";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
             // UC_Sales
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.button9);
             this.Controls.Add(this.panelLeft);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.cbbNV);
             this.Controls.Add(this.cbbKH);
             this.Controls.Add(this.dateTimePicker1);
@@ -540,6 +541,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox cbbKH;
         private System.Windows.Forms.ComboBox cbbNV;
+        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Panel panelLeft;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel5;
@@ -556,6 +558,5 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button9;
     }
 }
